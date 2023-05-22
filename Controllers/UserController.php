@@ -18,7 +18,7 @@ class UserController extends Controller
         $pass=$request->has('pass')? $request->get('pass'):'';
         $userInfo= User::where('name','=',$uName)->where('password','=',$pass)->first();
         if(isset($userInfo) && $userInfo!=null){
-            return redirect('/products');
+            return redirect('/admin_products');
         }
         else{
             return redirect()->back();
@@ -51,7 +51,7 @@ class UserController extends Controller
             'mobile'=>$request->has('mobile')? $request->get('mobile'):'',
             'password'=>$request->has('pass')? $request->get('pass'):'',
         ]);
-        return redirect('/products');
+        return redirect('/admin_products');
     }
 
     /**
@@ -98,4 +98,5 @@ class UserController extends Controller
     {
         //
     }
+   
 }
