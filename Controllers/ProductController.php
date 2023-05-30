@@ -15,7 +15,10 @@ class ProductController extends Controller
     public function index()
     {
         //return 'Index Method';
-        return view('products');
+        $products= Product::paginate(3);
+        //dd($product);
+        return view('products',compact('products'));
+
     }
 
     /**
@@ -79,6 +82,9 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         //
+        $images= explode('|',$product->image);
+        $related_products= Product::where('category_id',$product->category_id)->where('id','!=',$product->id)->limit(3)->get();
+        return view('product-details',compact('product','images','related_products'));
     }
 
     /**
