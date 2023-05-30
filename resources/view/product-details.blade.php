@@ -50,38 +50,74 @@ https://templatemo.com/tm-571-hexashop
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="page-heading" id="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="inner-content">
-                        <h2>Check Our Products</h2>
-                        <span>Style up without the finest clothing in town</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
     <!-- ***** Main Banner Area End ***** -->
 
 
-    <!-- ***** Products Area Starts ***** -->
-    <section class="section" id="products">
+    <!-- ***** Product Area Starts ***** -->
+    <section class="section" id="product">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h2>Our Latest Products</h2>
-                        <span>Check out all of our products.</span>
+                <div class="col-lg-8">
+                <div class="left-images">
+                    @if(isset($images[0]))
+                    <img src="{{asset($images[0])}}" alt="" >
+                    @endif
+                    @if(isset($images[1]))
+                    <img src="{{asset($images[1])}}" alt="" >
+                    @endif
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-content">
+                <span>{{$product->category->category_name}}</span>
+                    <h4>{{$product->name}}</h4>
+                    <span class="price">{{$product->price}} BDT</span>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                    </ul>
+                    <span>{{$product->details}}</span>
+                    <div class="quote">
+                        <i class="fa fa-quote-left"></i><p></p>
+                    </div>
+                    <div class="quantity-content">
+                        <div class="left-content">
+                            <h6>No. of Orders</h6>
+                        </div>
+                        <div class="right-content">
+                            <div class="quantity buttons_added">
+                                <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <h4></h4>
+                        <div class="main-border-button"><a href="#">Add To Cart</a></div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
         <div class="container">
+        <div class="col-xs-4">
+            
+            <a href="/products"><p>View More </p> </a>
+            
+            </div>
+         </div>
+
+
+        <div class="container">
         <div class="row">
-                    @foreach($products as $product)
+                    @foreach( $related_products as $rel_product)
                     <div class="col-xs-4" style="padding: 50px">
-                     <a href="{{ url('/products/'. $product->id) }} " >   <img src="{{asset(explode('|',$product->image) [0])}}" height="250" width="250"  > </a>
-                        <h4>{{$product->name}} </h4>
+                     <a href="{{ url('/products/'. $rel_product->id) }} " >   <img src="{{asset(explode('|',$rel_product->image) [0])}}" height="250" width="250"  > </a>
+                        <h4>{{$rel_product->name}} </h4>
                         <div> 
                         <i class= "fa fa-star"></i>
                         <i class= "fa fa-star"></i>
@@ -90,24 +126,12 @@ https://templatemo.com/tm-571-hexashop
                         <i class= "fa fa-star-o"></i>
 
                         </div>
-                        <p>{{$product->price}} BDT</p>
+                        <p>{{$rel_product->price}} BDT</p>
                 </div>
                 @endforeach
             </div>
-               
-                
-               
-            <!--  -->
-            <div class="col-lg-12">
-                    <div >
-                        {{$products->links('vendor.pagination.default')}}
-                    </div>
-                </div>
-
-
-          
     </section>
-    <!-- ***** Products Area Ends ***** -->
+    <!-- ***** Product Area Ends ***** -->
     
     <!-- ***** Footer Start ***** -->
     @include('layout.footer')
@@ -130,6 +154,7 @@ https://templatemo.com/tm-571-hexashop
     <script src="/js/slick.js"></script> 
     <script src="/js/lightbox.js"></script> 
     <script src="/js/isotope.js"></script> 
+    <script src="/js/quantity.js"></script>
     
     <!-- Global Init -->
     <script src="/js/custom.js"></script>

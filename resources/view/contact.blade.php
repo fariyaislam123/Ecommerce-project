@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop - Contact Page</title>
+    <title>The Dressy Dale - Contact Page</title>
 
 
     <!-- Additional CSS Files -->
@@ -77,7 +77,7 @@ https://templatemo.com/tm-571-hexashop
                 <div class="col-lg-6">
                     <div class="section-heading">
                         <h2>Say Hello. Don't Be Shy!</h2>
-                        <span>Details to details is what makes Hexashop different from the other themes.</span>
+                        <span>Details to details is what makes Dressy Dale different from the other themes.</span>
                     </div>
                     <form id="contact" action="" method="post">
                         <div class="row">

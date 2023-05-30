@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Hexashop - About Page</title>
+    <title>The Dressy Dale - About Page</title>
 
 
     <!-- Additional CSS Files -->
@@ -22,13 +22,7 @@
     <link rel="stylesheet" href="/css/owl-carousel.css">
 
     <link rel="stylesheet" href="/css/lightbox.css">
-<!--
 
-TemplateMo 571 Hexashop
-
-https://templatemo.com/tm-571-hexashop
-
--->
     </head>
     
     <body>
