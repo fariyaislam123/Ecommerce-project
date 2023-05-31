@@ -5,11 +5,12 @@
                     <div class="first-item">
                         <div class="logo">
                             <img src="/images/white-logo.png" alt="hexashop ecommerce templatemo">
+                           
                         </div>
                         <ul>
-                            <li><a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a></li>
-                            <li><a href="#">hexashop@company.com</a></li>
-                            <li><a href="#">010-020-0340</a></li>
+                            <li><a href="#">Dhaka, Bangladesh</a></li>
+                            <li><a href="#">thedressydale.com</a></li>
+                           
                         </ul>
                     </div>
                 </div>
@@ -34,11 +35,11 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="under-footer">
-                        <p>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved. 
+                        <p>Copyright © 2023 The Dressy Dale, Ltd. All Rights Reserved. 
                         
-                        <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
+                       
 
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank" title="free & premium responsive templates">ThemeWagon</a></p>
+                        
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>

@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="/images/logo.png">
                         </a>
                         <!-- ***** Logo End ***** -->
@@ -14,8 +14,8 @@
                             <li class="scroll-to-section"><a href="/">Home</a></li>
                             <li class="scroll-to-section"><a href="/about" >About Us</a></li>
                             <li class="scroll-to-section"><a href="/products" >Products</a></li>
-                            <li class="scroll-to-section"><a href="/single-product" >Single Product</a></li>
                             <li class="scroll-to-section"><a href="/contact">Contact Us</a></li>
+                            <li class="scroll-to-section"><a href="/cart">Cart</a></li>
                 
                            
                             
